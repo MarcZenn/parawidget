@@ -1,23 +1,20 @@
-/**
- * @class ExampleComponent
- */
+// libs
+import * as React from 'react';
 
-import * as React from 'react'
+// components
+import MarketChart from './marketChart';
 
-import styles from './styles.css'
 
-export type Props = { text: string }
-
-export default class ExampleComponent extends React.Component<Props> {
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
+const widgets = {
+  marketChart: {
+    new: () => {
+      return {
+        render(props: any) {
+          return <MarketChart text={props.text} />
+        }
+      }
+    }
   }
 }
+
+export default widgets;

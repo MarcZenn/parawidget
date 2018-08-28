@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "paradex widgets",
   "author": "marczenn",
-  "license": "MIT",
+  "license": "",
   "repository": "https://github.com/MarcZenn/parawidget.git",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

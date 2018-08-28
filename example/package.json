@@ -2,7 +2,7 @@
   "name": "parawidget-example",
   "homepage": "https://marczenn.github.io/parawidget",
   "version": "0.0.0",
-  "license": "MIT",
+  "license": "",
   "private": true,
   "dependencies": {
     "prop-types": "^15.6.2",
