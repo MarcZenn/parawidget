@@ -1,6 +1,5 @@
 // libs
 import * as React from 'react';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // styles
@@ -13,6 +12,7 @@ interface State {
     showMarketList: boolean;
 }
 
+// TODO:: abstract button into reusable btn component
 class MarketSelector extends React.Component<{}, State> {
     state = {
         showMarketList: false

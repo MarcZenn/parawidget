@@ -6,6 +6,5 @@ declare namespace styles {
 	const secondaryLabelText: string
 	const marketTile: string
 	const sparklineTile: string
-	const footer: string
 }
 export default styles

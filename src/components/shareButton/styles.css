@@ -1,0 +1,21 @@
+.share-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 25px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin: 0 5px;
+    color: grey;
+    font-size: 12px;
+}
+.share-button:hover {
+    cursor: pointer;
+}
+.share-button:focus {
+    outline: none;
+}
+.share-button:active {
+    outline: none;
+}

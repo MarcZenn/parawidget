@@ -5,6 +5,7 @@
     width: 30px;
     height: 25px;
     position: relative;
+    margin: 0 5px;
 }
 .market-selector:focus {
     outline: none;

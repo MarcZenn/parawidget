@@ -5,7 +5,7 @@ import * as React from 'react';
 import styles from './styles.css';
 
 // components 
-import MarketSelector from '../components/marketSelector/marketSelector';
+import Footer from '../components/footer/footer';
 
 // types
 interface Props {
@@ -28,7 +28,6 @@ class MarketChart extends React.Component<Props> {
             marketChartWidgetChartWrapper,
             primaryBoldText, 
             secondaryLabelText, 
-            footer
         } = styles;
 
 
@@ -51,10 +50,7 @@ class MarketChart extends React.Component<Props> {
                 chart goes here
             </div>
 
-            <div className={footer}>
-                logo and share button
-                <MarketSelector />
-            </div>
+            <Footer hasTopBorder={false} />
         </div>
         )
     }

@@ -33,10 +33,3 @@
     color: grey;
     font-family: Arial;
 }
-.footer {
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    align-items: center;
-  }

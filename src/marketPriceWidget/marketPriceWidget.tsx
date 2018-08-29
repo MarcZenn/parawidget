@@ -6,7 +6,7 @@ import { Sparklines, SparklinesLine } from 'react-sparklines';
 import styles from './styles.css';
 
 // components 
-import MarketSelector from '../components/marketSelector/marketSelector';
+import Footer from '../components/footer/footer';
 
 // types
 interface Props {
@@ -37,7 +37,6 @@ class MarketPrice extends React.Component<Props> {
             primaryBoldText, 
             secondaryLabelText, 
             sparklineTile, 
-            footer
         } = styles;
 
 
@@ -62,10 +61,8 @@ class MarketPrice extends React.Component<Props> {
                     </Sparklines>
                 </li>
             </ul>
-            <div className={footer}>
-                logo and share button
-                <MarketSelector/>
-            </div>
+            
+            <Footer hasTopBorder={true} />
         </div>
         )
     }

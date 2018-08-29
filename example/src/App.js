@@ -9,8 +9,8 @@ export default class App extends Component {
 
     return (
       <div>
-        <div>{marketPrice.render({primaryColor: 'purple'})}</div>
-        <div>{marketChart.render({primaryColor: 'pink'})}</div>
+        <div className="example-widget">{marketPrice.render({primaryColor: 'purple'})}</div>
+        <div className="example-widget">{marketChart.render({primaryColor: 'pink'})}</div>
       </div>
     )
   }

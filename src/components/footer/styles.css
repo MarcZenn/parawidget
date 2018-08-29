@@ -1,0 +1,13 @@
+.footer {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+}
+.top-border {
+    border-top: 1px solid lightgrey;
+}
+.footer-buttons {
+    display: flex;
+}
