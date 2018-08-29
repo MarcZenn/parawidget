@@ -2,15 +2,15 @@
 import * as React from 'react';
 
 // components
-import MarketChart from './marketChart';
+import MarketPrice from './marketPriceWidget/marketPrice';
 
 
 const widgets = {
-  marketChart: {
+  marketPrice: {
     new: () => {
       return {
         render(props: any) {
-          return <MarketChart text={props.text} />
+          return <MarketPrice text={props.text} />
         }
       }
     }

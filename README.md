@@ -13,19 +13,21 @@ npm install --save parawidget
 ## Usage
 
 ```tsx
-import * as React from 'react'
-
-import MyComponent from 'parawidget'
+import widgets from 'parawidget';
 
 class Example extends React.Component {
   render () {
+    const marketChart = widgets.marketChart.new();
+    
     return (
-      <MyComponent />
+      <div>
+        {marketChart.render({text: 'hello world'})}
+      </div>
     )
   }
 }
 ```
 
-## License
+## Author
 
-MIT © [marczenn](https://github.com/marczenn)
+[marczenn](https://github.com/marczenn)

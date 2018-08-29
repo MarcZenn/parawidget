@@ -4,11 +4,11 @@ import widgets from 'parawidget';
 
 export default class App extends Component {
   render () {
-    const marketChart = widgets.marketChart.new();
+    const marketPrice = widgets.marketPrice.new();
 
     return (
       <div>
-        {marketChart.render({text: 'ass'})}
+        {marketPrice.render({text: 'hello world'})}
       </div>
     )
   }
