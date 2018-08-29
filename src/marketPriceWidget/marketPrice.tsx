@@ -1,29 +1,34 @@
 // libs
 import * as React from 'react';
+import { Sparklines, SparklinesLine } from 'react-sparklines';
 
 // styles
 import styles from './styles.css';
 
+// components 
+import MarketSelector from '../components/marketSelector/marketSelector';
+
 // types
 interface Props {
-    text: string
+    primaryColor: string
 }
 
 class MarketPrice extends React.Component<Props> {
+    // TODO:: setup event listeners so that when localStorage changes refilter markets and set currentMarket in state
+    // TODO:: fetch sparklines everytime state updates.
+
+
     componentDidMount() {
-        // fetch market price data - make real time
-        // fetch market 
-        // fetch sparkinline data
-        // perhaps set to state?
+        // TODO:: customization props:
+        // const { color } = this.props;
+        // styles object - width, default width hardcoded, 
+        // sparkline lib
     }
 
 
 
     render() {
-        // const { text } = this.props;
-        // market id or market
-        // styles object - width, default width hardcoded, 
-        // sparkline lib
+        const { primaryColor } = this.props;
         const { 
             marketPriceWidget, 
             listTiles, 
@@ -40,21 +45,26 @@ class MarketPrice extends React.Component<Props> {
         <div className={marketPriceWidget}>
             <ul className={`${listTiles}`}>
                 <li className={`${tile} ${marketTile}`}>
-                    <p className={primaryBoldText}>ZRX/ETH</p>
+                    <p className={primaryBoldText} style={{color: `${primaryColor}`}}>ZRX/ETH</p>
                     <span className={secondaryLabelText}>0x/Wrapped Ether</span>
                 </li>
                 <li className={`${tile} market-price-tile`}>
-                    <p className={primaryBoldText}>0.001453</p>
+                    <p className={primaryBoldText} style={{color: `${primaryColor}`}}>0.001453</p>
                     <span className={secondaryLabelText}>
                         -0.0021 (4.7%)
                     </span>
                 </li>
                 <li className={`${tile} ${sparklineTile}`}>
-                    <div>sparkline</div>
+                    <Sparklines data={['2', '8', '1', '15', '12']}>
+                        <SparklinesLine
+                            style={{ fill: 'none', stroke: primaryColor, strokeWidth: 4 }}
+                        />
+                    </Sparklines>
                 </li>
             </ul>
             <div className={footer}>
                 logo and share button
+                <MarketSelector/>
             </div>
         </div>
         )

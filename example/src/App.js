@@ -8,7 +8,7 @@ export default class App extends Component {
 
     return (
       <div>
-        {marketPrice.render({text: 'hello world'})}
+        {marketPrice.render({primaryColor: 'grey'})}
       </div>
     )
   }
