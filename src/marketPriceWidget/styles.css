@@ -3,7 +3,7 @@
   flex-direction: column;
   max-width: 400px;
   background-color: #ffffff;
-  border: 2px solid lightgrey;
+  border: 1.5px solid lightgrey;
   border-radius: 3px;
 }
 .list-tiles {
@@ -37,7 +37,7 @@
   font-size: 12px;
   letter-spacing: .25px;
   font-weight: 200;
-  color: black;
+  color: grey;
   font-family: Arial;
 }
 .market-tile {

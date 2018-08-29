@@ -6,10 +6,12 @@ import { faCog } from '@fortawesome/free-solid-svg-icons'
 library.add(faCog);
 
 // components
-import MarketPrice from './marketPriceWidget/marketPrice';
+import MarketPrice from './marketPriceWidget/marketPriceWidget';
+import MarketChart from './marketChartWidget/marketChartWidget';
 
 // types
 import { MarketPriceWidgetProps } from './types/types';
+
 
 // TODO:: setup websockets
 // TODO:: fetch par-api ticker feed data
@@ -22,14 +24,21 @@ import { MarketPriceWidgetProps } from './types/types';
 
 // TODO:: gear icon - dropdown of all markets from which to choose from and set as current viewable market
 
-
-
 const widgets = {
   marketPrice: {
     new: () => {
       return {
         render(props: MarketPriceWidgetProps) {
           return <MarketPrice primaryColor={props.primaryColor} />
+        }
+      }
+    }
+  },
+  marketChart: {
+    new: () => {
+      return {
+        render(props: any) {
+          return <MarketChart primaryColor={props.primaryColor} />
         }
       }
     }

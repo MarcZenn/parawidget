@@ -6,9 +6,6 @@
     height: 25px;
     position: relative;
 }
-.market-selector:hover {
-    cursor: pointer;
-}
 .market-selector:focus {
     outline: none;
 }
@@ -24,6 +21,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.market-selector-icon:hover {
+    cursor: pointer;
 }
 .market-selector-icon:active {
     outline: none;
