@@ -8,3 +8,5 @@ declare module '*.css' {
 }
 
 declare module 'react-sparklines'
+
+declare module 'sockette'

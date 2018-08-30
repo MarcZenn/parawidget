@@ -1,15 +1,13 @@
-// libs
+
 import * as React from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCog } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faCog);
+import { openWebsocket } from './services/feed/feed';
 
-// components
 import MarketPrice from './marketPriceWidget/marketPriceWidget';
 import MarketChart from './marketChartWidget/marketChartWidget';
 
-// types
 import { MarketPriceWidgetProps } from './types/types';
 
 
@@ -23,6 +21,11 @@ import { MarketPriceWidgetProps } from './types/types';
 // TODO:: set first market as currentMarket in localStorage
 
 // TODO:: gear icon - dropdown of all markets from which to choose from and set as current viewable market
+
+
+
+library.add(faCog);
+openWebsocket();
 
 const widgets = {
   marketPrice: {
